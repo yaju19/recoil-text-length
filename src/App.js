@@ -1,17 +1,11 @@
 import "./App.css";
-import CharacterCounter from "./CharacterCounter";
-import {
-  RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from "recoil";
+import TodoList from "./TodoList";
+import { RecoilRoot } from "recoil";
 
 function App() {
   return (
     <RecoilRoot>
-      <CharacterCounter />
+      <TodoList />
     </RecoilRoot>
   );
 }

@@ -1,5 +1,5 @@
 import { useRecoilValue } from "recoil";
-import { charCountState } from "./AppStates";
+import { charCountState } from "./selectors";
 
 export default function CharacterCount() {
   const count = useRecoilValue(charCountState);
