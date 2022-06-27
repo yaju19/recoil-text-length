@@ -27,15 +27,14 @@ export default function TodoItem({ item }) {
   };
 
   return (
-    <div style={{ padding: "3px 0" }}>
-      {/* <input type="text" value={item.text} onChange={editItemText} /> */}
-      <p style={{ display: "inline" }}>{item.text}</p>
-      {/* <input
+    <div style={{ padding: "10px 0", margin: "10px 0" }}>
+      <input type="text" value={item.text} onChange={editItemText} />
+      <input
         type="checkbox"
         checked={item.isComplete}
         onChange={toggleItemCompletion}
       />
-      <button onClick={deleteItem}>X</button> */}
+      <button onClick={deleteItem}>X</button>
     </div>
   );
 }
